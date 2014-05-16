@@ -128,7 +128,7 @@
 			}
 
 			// create a query template
-			$query = "INSERT INTO Post (title, author, text) VALUES(?,?,?)";
+			$query = "INSERT INTO posts (title, author, text) VALUES(?,?,?)";
 
 			// prepare the query statement
 			$statement = $mysqli->prepare($query);
@@ -181,7 +181,7 @@
 		   	}
 		   		
 		   	// create a query template
-		   	$query = "UPDATE Post SET title = ?, author = ?, text = ? WHERE id = ?";
+		   	$query = "UPDATE posts SET title = ?, author = ?, text = ? WHERE id = ?";
 		   	
 		   	// prepare the query statement
 		  	$statement = $mysqli->prepare($query);
@@ -225,7 +225,7 @@
 			}
 
 			// create a query template
-			$query = "DELETE FROM Post WHERE id = ?";
+			$query = "DELETE FROM posts WHERE id = ?";
 
 			//prepare the statement
 			$statement = $mysqli->prepare($query);
@@ -257,7 +257,7 @@
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT id, author, text, date FROM Post WHERE title = ?";
+			$query = "SELECT id, author, text, date FROM posts WHERE title = ?";
 
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)
@@ -292,7 +292,7 @@
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT title, author, text, date FROM Post WHERE id = ?";
+			$query = "SELECT title, author, text, date FROM posts WHERE id = ?";
 
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)
@@ -327,7 +327,7 @@
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT id, author, text, date FROM Post ORDER BY date DESC LIMIT ?, 10";
+			$query = "SELECT id, author, text, date FROM posts ORDER BY date DESC LIMIT ?, 10";
 
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)

@@ -131,7 +131,7 @@
 			}
 
 			// create a query template
-			$query = "INSERT INTO User (email, password, salt) VALUES(?,?,?)";
+			$query = "INSERT INTO user (email, password, salt) VALUES(?,?,?)";
 
 			// prepare the query statement
 			$statement = $mysqli->prepare($query);
@@ -184,7 +184,7 @@
 		   	}
 		   		
 		   	// create a query template
-		   	$query = "UPDATE User SET email = ?, password = ?, salt = ? WHERE id = ?";
+		   	$query = "UPDATE user SET email = ?, password = ?, salt = ? WHERE id = ?";
 		   	
 		   	// prepare the query statement
 		  	$statement = $mysqli->prepare($query);
@@ -228,7 +228,7 @@
 			}
 
 			// create a query template
-			$query = "DELETE FROM User WHERE id = ?";
+			$query = "DELETE FROM user WHERE id = ?";
 
 			//prepare the statement
 			$statement = $mysqli->prepare($query);
@@ -260,14 +260,18 @@
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT id, password, salt FROM User WHERE email = ?";
+			$query = "SELECT id, password, salt FROM user WHERE email = ?";
 
+			var_dump($query);
+			
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)
 			{
 				throw(new Exception("Statement did not Prepare"));
 			}
-
+			
+			var_dump($statement);
+			
 			$bindTest = $statement->bind_param("s",$email);
 
 			if($bindTest === false)
@@ -282,7 +286,7 @@
 
 			$result = $statement->get_result();
 			$row    = $result->fetch_assoc();
-			$user = new User($row["ID"], $email, $row["password"], $row["salt"]);
+			$user = new User($row["id"], $email, $row["password"], $row["salt"]);
 			$statement->close();
 			
 			return($user);
@@ -295,7 +299,7 @@
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT email, password, salt FROM User WHERE id = ?";
+			$query = "SELECT email, password, salt FROM user WHERE id = ?";
 
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)
