@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once("user.php");
-require_once("/home/bradg/tutorconnect/config.php");
+require_once("../../config.php");
 function login()
 {
     $mysqli = Pointer::getMysqli();

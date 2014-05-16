@@ -1,6 +1,6 @@
 <?php
     require_once("post.php");
-    require_once("/home/bradg/tutorconnect/config.php");
+    require_once("../../config.php");
     $mysqli = Pointer::getMysqli();
     if(isset($_GET["post"]))
     {
