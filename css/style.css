@@ -12,6 +12,13 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+.logo {
+clear: both;
+z-index: 1000;
+left: 0;
+padding-top: 50px;
+}
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
