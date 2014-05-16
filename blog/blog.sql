@@ -20,7 +20,7 @@ CREATE TABLE posts
 	date TIMESTAMP,
 	INDEX(title),
         INDEX(author),
-	PRIMARY KEY(id),
+	PRIMARY KEY(id)
 );
 
 
