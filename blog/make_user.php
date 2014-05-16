@@ -10,6 +10,15 @@ function makeUser()
     $password = "ilovesecurepasswords";
     $password =  $password . $salt;
     $password = hash("sha512", $password, false);
+    try
+    {
+        $user = new User(-1, $email, $password, $salt);
+        $user->insert($mysqli);
+    }
+    catch(Exception $exception)
+    {
+        echo $exception;
+    }
     
     
 }
