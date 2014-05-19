@@ -37,20 +37,20 @@ function postApplicationToMySQL(&$mysqli)
 
 	/* bind parameters to the prepared statement */
 	$statement->bind_param("isssssssssssssi",
-								$_POST["classId"],
-								$_POST["aboutYourself"],
-								$_POST["whyAttend"],
-								$_POST["otherLinks"],
-								$_POST["progExperience"],
-								$_POST["fullName"],
-								$_POST["phoneNumber"],
-								$_POST["emailAddress"],
-								$_POST["howHeard"],
-								$_POST["skype"],
-								$_POST["google"],
-								$_POST["gender"],
+								htmlspecialchars($_POST["classId"]),
+								htmlspecialchars($_POST["aboutYourself"]),
+								htmlspecialchars($_POST["whyAttend"]),
+								htmlspecialchars($_POST["otherLinks"]),
+								htmlspecialchars($_POST["progExperience"]),
+								htmlspecialchars($_POST["fullName"]),
+								htmlspecialchars($_POST["phoneNumber"]),
+								htmlspecialchars($_POST["emailAddress"]),
+								htmlspecialchars($_POST["howHeard"]),
+								htmlspecialchars($_POST["skype"]),
+								htmlspecialchars($_POST["google"]),
+								htmlspecialchars($_POST["gender"]),
 								$birthday,
-								$_SERVER["HTTP_USER_AGENT"],
+								htmlspecialchars($_SERVER["HTTP_USER_AGENT"]),
 								$ipAddress);
 
 	/* execute mySQL query */
@@ -130,29 +130,37 @@ function getClassList(&$mysqli)
 		throw(new Exception("Unable to prepare mySQL query: " . $mysqli->error));
 	}
 
-	/* execute mySQL query */
-	if($statement->execute() === false)
+	try
 	{
-		throw(new Exception("Unable to query mySQL: " . $statement->error));
+		$statement->execute();
+	}
+	catch(mysqli_sql_exception $exception)
+	{
+		// ignore the "No index used..." exception since it's just a minor warning
+		if(strpos($exception->getMessage(), "No index used in query/prepared statement") === false)
+		{
+			throw(new Exception("Statement did not Execute", 0, $exception));
+		}
 	}
 
 	$classes = array();
-	$statement->bind_result($id, $className, $startDate);
-	while($statement->fetch())
+	$result = $statement->get_result();
+	while(($row = $result->fetch_assoc()) !== null)
 	{
 		/* verify & normalize the date */
 		$classDate = null;
 		try
 		{
-			$date      = new DateTime($startDate);
+			$date      = new DateTime($row["startDate"]);
 			$classDate = $date->format("m/d/Y");
 		}
 		catch(Exception $e)
 		{
 			throw(new Exception("Unable to format start date: invalid start date", 0, $e));
 		}
-		$class = $className . " ($classDate)";
-		$classes[$id] = $class;
+
+		$class = $row["className"] . " ($classDate)";
+		$classes[$row["id"]] = $class;
 	}
 	return($classes);
 }
@@ -181,20 +189,20 @@ function getClassName(&$mysqli, $classId)
 		throw(new Exception("Unable to query mySQL: " . $statement->error));
 	}
 
-	$statement->bind_result($className, $startDate);
-	$statement->fetch();
+	$result = $statement->get_result();
+	$row    = $statement->fetch_assoc();
 	/* verify & normalize the date */
 	$classDate = null;
 	try
 	{
-		$date      = new DateTime($startDate);
+		$date      = new DateTime($row["startDate"]);
 		$classDate = $date->format("m/d/Y");
 	}
 	catch(Exception $e)
 	{
 		throw(new Exception("Unable to format start date: invalid start date", 0, $e));
 	}
-	$class = $className . " ($classDate)";
+	$class = $row["className"] . " ($classDate)";
 	return($class);
 }
 
