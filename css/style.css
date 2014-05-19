@@ -16,12 +16,6 @@ body {
 padding-top: 18px;
 }
 
-/*
-.container {
-color: #428bca;
-}
-*/
-
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
 color: #fff;
 background-color: #63af44;
@@ -74,6 +68,7 @@ color: #428bca;
 .carousel {
   height: 500px;
   margin-bottom: 60px;
+  background-color: #ffffff;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -83,7 +78,7 @@ color: #428bca;
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: #cecece;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -93,6 +88,24 @@ color: #428bca;
   height: 500px;
 }
 
+.carousel-control.left {
+background-image: none;
+background-image: none;
+background-repeat: none;
+filter: none;
+}
+
+.carousel-control.right {
+background-image: none;
+background-image: none;
+background-repeat: none;
+filter: none;
+}
+
+.carousel-caption {
+z-index: 10;
+padding-bottom: 100px;
+}
 
 
 /* MARKETING CONTENT
