@@ -15,6 +15,6 @@ catch(Exception $e)
 	echo "Unable to send application form: " . $e->getMessage();
 }
 
-$url = preg_replace("/(\\w+\.php)$/", "thankyou.php", $_SERVER["PHP_SELF"]);
+$url = preg_replace("/(\\w+\.php)$/", "thankyou.html", $_SERVER["PHP_SELF"]);
 header("Location: $url");
 ?>
