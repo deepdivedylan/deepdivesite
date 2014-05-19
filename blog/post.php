@@ -340,7 +340,7 @@
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT id, title, author, text, date FROM posts WHERE id > 0 ORDER BY date DESC LIMIT ?, 8";
+			$query = "SELECT id, title, author, text, date FROM posts ORDER BY date DESC LIMIT ?, 10";
 
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)
@@ -355,9 +355,17 @@
 				throw (new Exception("Statement did not Bind"));
 			}
 
-			if($statement->execute() === false)
+			try
 			{
-				throw(new Exception("Statement did not Execute"));
+				$statement->execute();
+			}
+			catch(mysqli_sql_exception $exception)
+			{
+				// ignore the "No index used..." exception since it's just a minor warning
+				if(strpos($exception->getMessage(), "No index used in query/prepared statement") === false)
+				{
+					throw(new Exception("Statement did not Execute", 0, $exception));
+				}
 			}
 
 			$result = $statement->get_result();
