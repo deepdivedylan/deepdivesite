@@ -1,29 +1,19 @@
 <?php
+require_once("../../config.php");
 require_once("applylib.php");
 
-$mysql = null;
+$mysqli = null;
 try
 {
 	verifyCaptcha();
-	$mysql = connectToMySQL();
-	postApplicationToMySQL($mysql);
-	emailApplicationResults($mysql);
+	$mysqli = Pointer::getMySqli();
+	postApplicationToMySQL($mysqli);
+	emailApplicationResults($mysqli);
 }
 catch(Exception $e)
 {
 	echo "Unable to send application form: " . $e->getMessage();
 }
-if($mysql !== null)
-{
-	$mysql->close();
-}
-
-/* echo "POST data:<br /><pre>\n";
-print_r($_POST);
-
-echo "</pre><br />SERVER data:<br /><pre>\n";
-print_r($_SERVER);
-echo "</pre>"; */
 
 $url = preg_replace("/(\\w+\.php)$/", "thankyou.php", $_SERVER["PHP_SELF"]);
 header("Location: $url");
