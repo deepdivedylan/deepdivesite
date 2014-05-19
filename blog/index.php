@@ -21,6 +21,7 @@
         $author = $post->getAuthor();
         $text = $post->getText();
         $text = implode(' ', array_slice(explode(' ', $text), 0, 100));
+        $text = strip_tags($text, "<a><h1><h2><h3><h4><h5><h6><img><p>");
         $date   = new DateTime($post->getDate());
 	$date   = $date->format("F j, Y");
         echo "<a href='page.php?post=$id'><h1>$title</h1></a>";
