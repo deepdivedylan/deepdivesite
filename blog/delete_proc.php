@@ -8,7 +8,7 @@
         try
         {
                     $post = Post::getPostById($mysqli, $id);
-                    $post->update($mysqli);
+                    $post->delete($mysqli);
         }
         catch(Exception $exception)
         {
