@@ -14,7 +14,6 @@ function makeUser()
     {
         $user = new User(-1, $email, $password, $salt);
         $user->insert($mysqli);
-        echo $user;
     }
     catch(Exception $exception)
     {

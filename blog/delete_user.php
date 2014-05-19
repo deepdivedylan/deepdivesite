@@ -12,9 +12,8 @@ function makeUser()
     $password = hash("sha512", $password, false);
     try
     {
-        $user = new User(-1, $email, $password, $salt);
+        $user = User::getUserByEmail($mysqli, $email);
         $user->delete($mysqli);
-        echo $user;
     }
     catch(Exception $exception)
     {

@@ -261,16 +261,12 @@
 			}
 
 			$query = "SELECT id, password, salt FROM user WHERE email = ?";
-
-			var_dump($query);
 			
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)
 			{
 				throw(new Exception("Statement did not Prepare"));
 			}
-			
-			var_dump($statement);
 			
 			$bindTest = $statement->bind_param("s",$email);
 

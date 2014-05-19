@@ -16,8 +16,8 @@
 			{
 				$this->setId($newId);
 				$this->setTitle($newTitle);
-				$this->setEmail($newAuthor);
-				$this->setSalt($newText);
+				$this->setAuthor($newAuthor);
+				$this->setText($newText);
                                 $this->setDate($newDate);
 			}
 			catch(Exception $exception)
@@ -102,10 +102,10 @@
 			$text   = trim($text);
                         
                         //strip tags to santize certain types of input
-                        strip_tags($text, "<a><h1><h2><h3><h4><h5><h6><ul><ol><li><em><strong><img>");
+                        $text = strip_tags($text, "<a><h1><h2><h3><h4><h5><h6><ul><ol><li><em><strong><img>");
                         
                         //put the <p> tags back in
-                        str_ireplace("\n","</p>\n<p>", $text);
+                        $text = str_ireplace("\n","</p>\n<p>", $text);
                         $text = "<p>$text</p>";
                         
                         //set the text
