@@ -1,0 +1,27 @@
+body
+{
+	font-family: sans-serif;
+}
+
+textarea
+{
+	width:  60%;
+	resize: horizontal;
+}
+
+.required
+{
+	font-weight: bold;
+	color: red;
+}
+
+.textField
+{
+	width: 30%;
+}
+
+.passionTable
+{
+	border-collapse:separate;
+	border-spacing:10px 5px;
+}
