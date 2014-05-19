@@ -10,7 +10,7 @@
         $author = trim($author);
         $text = $_POST["text"];
         $text = trim($text);
-        $id = $_GET["post"];
+        $id = $_POST["postId"];
         $date = null;
         try
         {
@@ -22,10 +22,10 @@
         }
         catch(Exception $exception)
         {
-                    echo "<p style='color: red'>There was a problem publishing your post.</p>";
+                    echo "<p style='color: red'>There was a problem updating your post: $exception</p>";
                     return;
         }
-        header("location: page.php");
+        header("location: page.php?post=$id");
         
     }
     updatePost();

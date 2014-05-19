@@ -15,13 +15,14 @@
         {
                     $post = new Post(-1, $title, $author, $text, $date);
                     $post->insert($mysqli);
+                    $id = $post->getId();
         }
         catch(Exception $exception)
         {
                     echo "<p style='color: red'>There was a problem publishing your post.</p>";
                     return;
         }
-        header("location: page.php");
+        header("location: page.php?post=$id");
         
     }
     publishPost();

@@ -58,6 +58,7 @@
         <input type='text' name='title' class='form-control' value='$title' required autofocus><br />
         <input type='text' name='author' class='form-control' value='$author' required><br />
         <textarea name='text' class='form-control' required rows='40' cols='50'>$text</textarea><br />
+        <input type='hidden' name='postId' value='$id'>
         <button class='btn btn-lg btn-primary btn-block' type='submit'>Update</button>
       </form>"
     ?>
