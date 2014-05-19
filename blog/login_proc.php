@@ -23,7 +23,7 @@ function login()
     {
         $id = $user->getId();
         $_SESSION["id"] = $id;
-        header("location: write_post.php");
+        header("location: admin.php");
     }
     else
     {

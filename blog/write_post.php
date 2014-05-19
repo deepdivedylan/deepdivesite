@@ -33,7 +33,10 @@
   <body>
 
     <div class="container">
-
+        <nav style="max-width: 800px; margin: 0 auto; padding: 15px">
+        <a href="logout_proc.php"><button class="btn btn-lg btn-primary btn-block" type="submit" style="float: right; width: 100px">Logout</button></a>
+        <a href="admin.php"><button class="btn btn-lg btn-primary btn-block" style="float: right; width: 100px; margin-right: 20px">Home</button></a>
+        </nav>
       <form class="form-post" role="form" method="post" action="post_proc.php">
         <h2 class="form-signin-heading">Write a Post</h2>
         <input type="text" name="title" class="form-control" placeholder="Post Title" required autofocus><br />

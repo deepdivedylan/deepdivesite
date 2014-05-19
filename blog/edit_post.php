@@ -54,12 +54,15 @@
   <body>
 
     <div class="container">
+      <nav style="max-width: 800px; margin: 0 auto; padding: 15px">
+        <a href="logout_proc.php"><button class="btn btn-lg btn-primary btn-block" type="submit" style="float: right; width: 100px">Logout</button></a>
+        <a href="admin.php"><button class="btn btn-lg btn-primary btn-block" style="float: right; width: 100px; margin-right: 20px">Home</button></a>
+        </nav>
     <?php
       echo "<form class='form-post' role='form' method='post' action='update_proc.php'>
         <h2 class='form-signin-heading'>Update a Post</h2>
         <input type='text' name='title' class='form-control' value='$title' required autofocus><br />
         <input type='text' name='author' class='form-control' value='$author' required><br />
-        <input type='text' name='date' class='form-control' value='$date' required><br />
         <textarea name='text' class='form-control' required rows='40' cols='50'>$text</textarea><br />
         <input type='hidden' name='postId' value='$id'>
         <button class='btn btn-lg btn-primary btn-block' type='submit'>Update</button>
