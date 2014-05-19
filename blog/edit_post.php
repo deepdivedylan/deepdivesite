@@ -15,11 +15,9 @@
       $author = $post->getAuthor();
       $text = $post->getText();
                         
-      //put the <p> tags back in
-      $text = str_ireplace("</p>", "\n", $text);
-      $text = str_ireplace("<p>", "", $text);
-      
-      
+      // put the <p> tags back in
+      $text = str_replace("</p>", "\n", $text);
+      // $text = str_replace("<p>", " ", $text);
   }
   else
   {
