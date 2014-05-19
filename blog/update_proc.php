@@ -11,13 +11,14 @@
         $text = $_POST["text"];
         $text = trim($text);
         $id = $_POST["postId"];
-        $date = null;
+        $date = $_POST["date"];;
         try
         {
                     $post = Post::getPostById($mysqli, $id);
                     $post->setTitle($title);
                     $post->setAuthor($author);
                     $post->setText($text);
+                    $post->setDate($date);
                     $post->update($mysqli);
         }
         catch(Exception $exception)

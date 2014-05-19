@@ -14,6 +14,7 @@
       $title = $post->getTitle();
       $author = $post->getAuthor();
       $text = $post->getText();
+      $date = $post->getDate();
                         
       // put the <p> tags back in
       $text = str_replace("</p>", "\n", $text);
@@ -57,6 +58,7 @@
         <h2 class='form-signin-heading'>Update a Post</h2>
         <input type='text' name='title' class='form-control' value='$title' required autofocus><br />
         <input type='text' name='author' class='form-control' value='$author' required><br />
+        <input type='text' name='date' class='form-control' value='$date' required><br />
         <textarea name='text' class='form-control' required rows='40' cols='50'>$text</textarea><br />
         <input type='hidden' name='postId' value='$id'>
         <button class='btn btn-lg btn-primary btn-block' type='submit'>Update</button>

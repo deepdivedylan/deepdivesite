@@ -17,7 +17,7 @@ CREATE TABLE posts
 	title VARCHAR(128) NOT NULL,
 	author VARCHAR(128) NOT NULL,
 	text TEXT NOT NULL,
-	date TIMESTAMP,
+	date DATETIME,
 	INDEX(title),
         INDEX(author),
 	PRIMARY KEY(id)
