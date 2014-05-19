@@ -20,7 +20,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
   </head>
 
 <!-- NAVBAR
@@ -28,7 +28,7 @@
   <body>
  <div class="navbar-wrapper">
       <div class="container"> 
-        <a href=""><img src="images/logo.png" class="logo"></a>
+        <a href=""><img src="../images/logo.png" class="logo"></a>
           <div class="navbar navbar-inverse navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
