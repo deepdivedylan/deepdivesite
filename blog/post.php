@@ -335,7 +335,7 @@
 				throw(new Exception("Statement did not Prepare"));
 			}
 
-			$bindTest = $statement->bind_param("s",$title);
+			$bindTest = $statement->bind_param("i",$id);
 
 			if($bindTest === false)
 			{
