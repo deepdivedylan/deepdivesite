@@ -16,9 +16,10 @@
       $text = $post->getText();
       $date = $post->getDate();
                         
-      // put the <p> tags back in
+      // take the <p> tags out
       $text = str_replace("</p>", "\n", $text);
       $text = str_replace("<p>", "", $text);
+      $text = preg_replace("/(^(\r?\n)*|(\r?\n)+)\s*(\r?\n)+/", "\n", $text);
   }
   else
   {

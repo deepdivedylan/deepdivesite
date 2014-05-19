@@ -194,7 +194,7 @@
 		   	}
 
 		   	// create a query template
-		   	$query = "UPDATE posts SET title = ?, author = ?, text = ? WHERE id = ?";
+		   	$query = "UPDATE posts SET title = ?, author = ?, text = ?, date = ? WHERE id = ?";
 
 		   	// prepare the query statement
 		  	$statement = $mysqli->prepare($query);
@@ -205,7 +205,7 @@
 			}
 
 		  	// bind parameters to the query template, takes post inputs and check them
-		  	$wasClean = $statement->bind_param("sssi", $this->title, $this->author, $this->text, $this->id);
+		  	$wasClean = $statement->bind_param("ssssi", $this->title, $this->author, $this->text, $this->date, $this->id);
 
 		  	if($wasClean === false)
 		  	{
@@ -340,7 +340,7 @@
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT id, title, author, text, date FROM posts WHERE id > 0 ORDER BY date DESC LIMIT ?, 10";
+			$query = "SELECT id, title, author, text, date FROM posts WHERE id > 0 ORDER BY date DESC LIMIT ?, 8";
 
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)

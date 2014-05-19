@@ -10,7 +10,7 @@
         $author = trim($author);
         $text = $_POST["text"];
         $text = trim($text);
-        $date = null;
+        $date = date("Y-m-d H:i:s");
         try
         {
                     $post = new Post(-1, $title, $author, $text, $date);

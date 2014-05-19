@@ -20,10 +20,10 @@
         $title = $post->getTitle();
         $author = $post->getAuthor();
         $text = $post->getText();
-        $text = implode(' ', array_slice(explode(' ', $text), 0, 50));
+        $text = implode(' ', array_slice(explode(' ', $text), 0, 100));
         $date   = new DateTime($post->getDate());
 	$date   = $date->format("F j, Y");
-        echo "<h1>$title</h1>";
+        echo "<a href='page.php?post=$id'><h1>$title</h1></a>";
         echo "<h3>By $author</h3>";
         echo "<h3>on $date</h3>";
         echo "$text" . "... ";

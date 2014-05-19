@@ -11,7 +11,7 @@
         $text = $_POST["text"];
         $text = trim($text);
         $id = $_POST["postId"];
-        $date = $_POST["date"];;
+        $date = $_POST["date"];
         try
         {
                     $post = Post::getPostById($mysqli, $id);
