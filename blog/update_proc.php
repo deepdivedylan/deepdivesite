@@ -10,10 +10,14 @@
         $author = trim($author);
         $text = $_POST["text"];
         $text = trim($text);
+        $id = $_GET["post"];
         $date = null;
         try
         {
-                    $post = new Post(-1, $title, $author, $text, $date);
+                    $post = Post::getPostById($mysqli, $id);
+                    $post->setTitle($title);
+                    $post->setAuthor($author);
+                    $post->setText($text);
                     $post->update($mysqli);
         }
         catch(Exception $exception)

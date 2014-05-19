@@ -17,7 +17,7 @@
                         
       // put the <p> tags back in
       $text = str_replace("</p>", "\n", $text);
-      // $text = str_replace("<p>", " ", $text);
+      $text = str_replace("<p>", "", $text);
   }
   else
   {
@@ -57,7 +57,7 @@
         <h2 class='form-signin-heading'>Update a Post</h2>
         <input type='text' name='title' class='form-control' value='$title' required autofocus><br />
         <input type='text' name='author' class='form-control' value='$author' required><br />
-        <textarea name='text' class='form-control' required rows='40' cols='50' value='$text'></textarea><br />
+        <textarea name='text' class='form-control' required rows='40' cols='50'>$text</textarea><br />
         <button class='btn btn-lg btn-primary btn-block' type='submit'>Update</button>
       </form>"
     ?>
