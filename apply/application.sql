@@ -35,3 +35,6 @@ CREATE TABLE application
 INSERT INTO classes(className, startDate) VALUES('Web Development/PHP', '2013-10-14');
 INSERT INTO classes(className, startDate) VALUES('Web Development/PHP', '2014-01-06');
 INSERT INTO classes(className, startDate) VALUES('Web Development/PHP', '2014-03-24');
+INSERT INTO classes(className, startDate) VALUES('Web Development/PHP', '2014-06-02');
+INSERT INTO classes(className, startDate) VALUES('Web Development/PHP', '2014-08-11');
+INSERT INTO classes(className, startDate) VALUES('Web Development/PHP', '2014-10-20');
