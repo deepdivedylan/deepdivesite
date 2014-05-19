@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks -MultiViews
+    RewriteEngine On
+    RewriteBase /blog/
+    RewriteRule ^([a-z0-9_-]+)$ /blog/loadPostByTitle.php?title=$1 [L,NC]
+</IfModule>
