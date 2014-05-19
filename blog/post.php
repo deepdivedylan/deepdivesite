@@ -1,14 +1,14 @@
 <?php
-	
+
 	class Post
 	{
-		//create member variables 
+		//create member variables
 		private $id;
 		private $title;
 		private $author;
 		private $text;
                 private $date;
-		
+
 		//the constructor for the post object
 		public function __construct($newId,$newTitle,$newAuthor,$newText, $newDate)
 		{
@@ -23,7 +23,7 @@
 			catch(Exception $exception)
 			{
 				throw(new Exception($exception));
-			}	
+			}
 		}
 /************************************************************Accessors & Mutators*******************************************/
 		//getters for the member variables
@@ -31,20 +31,20 @@
 		{
 		    return $this->id;
 		}
-                
+
                 public function getTitle()
 		{
 		    return $this->title;
 		}
-		
+
 		public function getAuthor()
 		{
 		    return $this->author;
 		}
-		
+
 		public function getText()
 		{
-		    return $this->text;   
+		    return $this->text;
 		}
                 public function getDate()
                 {
@@ -71,53 +71,66 @@
 		    //sanitized; assign the value
 		    $this->id = $newId;
 		}
-                
+
                 public function setTitle($title)
 		{
 			//trim the title input
 			$title = trim($title);
-                        
-                        //htmlspecialchars to santize input 
+
+                        //htmlspecialchars to santize input
                         htmlspecialchars($title);
-			
-			//set the title 
+
+			//set the title
 			$this->title = $title;
 		}
-                
+
 		public function setAuthor($author)
 		{
 			//trim the author input
 			$author = trim($author);
-			
-                        //htmlspecialchars to santize input 
+
+                        //htmlspecialchars to santize input
                         htmlspecialchars($author);
-                        
+
                         //set the author
                         $this->author = $author;
 		}
-	    
+
 		public function setText($text)
 		{
 			//trim the text
 			$text   = trim($text);
-                        
+
                         //strip tags to santize certain types of input
                         $text = strip_tags($text, "<a><h1><h2><h3><h4><h5><h6><ul><ol><li><em><strong><img>");
-                        
+
                         //put the <p> tags back in
                         $text = str_ireplace("\n","</p>\n<p>", $text);
                         $text = "<p>$text</p>";
-                        
+
                         //set the text
 			$this->text = $text;
 		}
-                
+
                 public function setDate($date)
-		{                        
+		{
                         //set the date
                         $this->date = $date;
 		}
-                
+
+/*******************************************************Contracts*************************************/
+		public function __toString()
+		{
+			$date   = new DateTime($this->date);
+			$date   = $date->format("F j, Y");
+			$output = "";
+			$output = $output . "<h1>"    . $this->title  . "</h1>";
+			$output = $output . "<h3>By " . $this->author . "</h3>";
+			$output = $output . "<h3>on $date</h3>";
+			$output = $output . $this->text;
+			return($output);
+		}
+
 /*******************************************************Insert, Delete & Update Methods*************************************/
 		public function insert(&$mysqli)
 		{
@@ -136,24 +149,24 @@
 			{
 				throw(new Exception("Statement did not Prepare"));
 			}
-			
+
 			// bind parameters to the query template, takes post inputs and check them
 			$bindTest = $statement->bind_param("sss", $this->title, $this->author, $this->text);
 			if($bindTest === false)
 			{
 				throw (new Exception("Statement did not Bind"));
 			}
-			
+
 			//execute the statement, insert the object
 			if($statement->execute() === false)
 			{
 				echo $statement->error;
 				throw(new Exception("Statement did not Execute"));
 			}
-			
+
 			//clean up the statement
 			$statement->close();
-			
+
 			//set the object id to the same as it is in the database
 			try
 			{
@@ -165,7 +178,7 @@
 				throw(new Exception("Unable to determine post id", 0, $exception));
 			}
 		}
-		
+
 		public function update(&$mysqli)
 		{
 		   	// handle degenerate cases
@@ -173,43 +186,43 @@
 		   	{
 		   		throw(new Exception("Non mySQL pointer detected"));
 		   	}
-		   
+
 		   	// verify the id is not -1 (i.e., an existing post)
 		   	if($this->id === -1)
 		   	{
 		   		throw(new Exception("New id detected"));
 		   	}
-		   		
+
 		   	// create a query template
 		   	$query = "UPDATE posts SET title = ?, author = ?, text = ? WHERE id = ?";
-		   	
+
 		   	// prepare the query statement
 		  	$statement = $mysqli->prepare($query);
 
 		  	if($statement === false)
 		  	{
 		  	   	throw(new Exception("Unable to prepare statement."));
-			}  
-		  	   
+			}
+
 		  	// bind parameters to the query template, takes post inputs and check them
 		  	$wasClean = $statement->bind_param("sssi", $this->title, $this->author, $this->text, $this->id);
-		  	   
+
 		  	if($wasClean === false)
 		  	{
 		  	   	throw(new Exception("Unable to bind parameters"));
 		  	}
-		  	
+
 			//execute the statement, update the object
 		  	if($statement->execute() === false)
 		  	{
 		  		echo $statement->error;
 		  	   	throw(new Exception("Unable to execute statement."));
 		  	}
-		  	   
+
 		  	// clean up the statement
-		  	$statement->close();	 
+		  	$statement->close();
 		}
-		
+
 		public function delete(&$mysqli)
 		{
 			// handle degenerate cases
@@ -233,13 +246,13 @@
 			{
 				throw(new Exception("Statement did not prepare"));
 			}
-			
+
 			// bind parameters to the query template, takes post inputs and check them
 			if($statement->bind_param("i",$this->id) === false)
 			{
 				throw(new Exception("Statement did not bind"));
 			}
-			
+
 			//execute the statement, delete the object
 			if($statement->execute() === false )
 			{
@@ -248,7 +261,7 @@
 			}
 			$statement->close();
 		}
-		
+
 /**********************************************************Static Functions*************************************************/
 		public static function getPostByTitle(&$mysqli,$title)
 		{
@@ -281,7 +294,7 @@
 			$row    = $result->fetch_assoc();
 			$post = new Post($row["id"], $title, $row["author"], $row["text"], $row["date"]);
 			$statement->close();
-			
+
 			return($post);
 		}
 
@@ -314,12 +327,12 @@
 
 			$result = $statement->get_result();
 			$row    = $result->fetch_assoc();
-		
+
 			$post =new Post($id,$row["title"],$row["author"],$row["text"],$row["date"]);
 
 			return($post);
 		}
-                
+
                 public static function getTenPostsByDate(&$mysqli,$id)
 		{
 			if(is_object($mysqli) === false || get_class($mysqli) !== "mysqli")
@@ -351,7 +364,7 @@
 			$row    = $result->fetch_assoc();
 			$post = new Post($row["id"], $row["title"], $row["author"], $row["text"], $row["date"]);
 			$statement->close();
-			
+
 			return($post);
 		}
 	}
