@@ -60,6 +60,10 @@ color: #428bca;
   padding-left: 15px;
 }
 
+.footer {
+background-color: #cecece; 
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -150,8 +154,13 @@ padding-bottom: 100px;
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 768px) {
+@media (min-width: 330px) {
+  
 
+}
+
+@media (min-width: 768px) {
+ 
   /* Remove the edge padding needed for mobile */
   .marketing {
     padding-right: 0;
@@ -162,6 +171,7 @@ padding-bottom: 100px;
   .navbar-wrapper {
     margin-top: 20px;
   }
+  
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left:  15px;
@@ -192,4 +202,5 @@ padding-bottom: 100px;
   .featurette-heading {
     margin-top: 120px;
   }
+  
 }
