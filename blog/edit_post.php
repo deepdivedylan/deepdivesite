@@ -62,6 +62,12 @@
         <button class='btn btn-lg btn-primary btn-block' type='submit'>Update</button>
       </form>"
     ?>
+  
+    <form class="form-post" role="role" method="post" action="delete_proc.php">
+      <input type='hidden' name='postId' value='<?php echo $id ?>'>
+      <button class='btn btn-lg btn-danger btn-block' type='submit'>Delete This Post</button>
+      
+    </form>
     </div> 
   </body>
 </html>

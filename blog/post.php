@@ -78,7 +78,7 @@
 			$title = trim($title);
 
                         //htmlspecialchars to santize input
-                        htmlspecialchars($title);
+                        $title = htmlspecialchars($title);
 
 			//set the title
 			$this->title = $title;
@@ -340,7 +340,7 @@
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT id, author, text, date FROM posts ORDER BY date DESC LIMIT ?, 10";
+			$query = "SELECT id, title, author, text, date FROM posts WHERE id > 0 ORDER BY date DESC LIMIT ?, 10";
 
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)
@@ -361,11 +361,14 @@
 			}
 
 			$result = $statement->get_result();
-			$row    = $result->fetch_assoc();
-			$post = new Post($row["id"], $row["title"], $row["author"], $row["text"], $row["date"]);
+			$posts = array();
+			while($row    = $result->fetch_assoc())
+			{
+				$posts[] = new Post($row["id"], $row["title"], $row["author"], $row["text"], $row["date"]);
+			}
 			$statement->close();
 
-			return($post);
+			return($posts);
 		}
 	}
 ?>
