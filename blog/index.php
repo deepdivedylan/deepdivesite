@@ -77,6 +77,7 @@
 	<?php
             require_once("post.php");
             require_once("../../config.php");
+            require_once("loadPostByTitle.php");
             $mysqli = Pointer::getMysqli();
             if(!isset($_GET["page"]))
             {
@@ -100,11 +101,12 @@
                 $text = strip_tags($text, "<a><h1><h2><h3><h4><h5><h6><img><p>");
                 $date   = new DateTime($post->getDate());
                 $date   = $date->format("F j, Y");
-                echo "<a href='page.php?post=$id'><h1>$title</h1></a>";
+                $url = titleToUrl($title);
+                echo "<a href='$url'><h1>$title</h1></a>";
                 echo "<h3>By $author</h3>";
                 echo "<h3>on $date</h3>";
                 echo "$text" . "... ";
-                echo "<a href='page.php?post=$id'>Read More.</a><br /><br />";
+                echo "<a href='$url'>Read More.</a><br /><br />";
             }
             if(!isset($_GET["page"]))
             {
