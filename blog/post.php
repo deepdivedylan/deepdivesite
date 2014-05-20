@@ -425,26 +425,19 @@
 			return($posts);
 		}
 		
-		public static function getAllTitles(&$mysqli,$id)
+		public static function getAllTitles(&$mysqli)
 		{
 			if(is_object($mysqli) === false || get_class($mysqli) !== "mysqli")
 			{
 				throw (new Exception ("not a mysqli object"));
 			}
 
-			$query = "SELECT id, title, FROM posts";
+			$query = "SELECT id, title FROM posts";
 
 			$statement = $mysqli->prepare($query);
 			if ($statement === false)
 			{
 				throw(new Exception("Statement did not Prepare"));
-			}
-
-			$bindTest = $statement->bind_param("i",$id);
-
-			if($bindTest === false)
-			{
-				throw (new Exception("Statement did not Bind"));
 			}
 
 			try
@@ -464,8 +457,11 @@
 			$posts = array();
 			while($row    = $result->fetch_assoc())
 			{
-				$title = preg_replace("/[^\w_-]*/", "", $row["title"]);
-				$posts[$row["id"]] = $title;
+				$title = $row["title"];
+				$id = $row["id"];
+				$title = strtolower($title);
+				$title = preg_replace("/[^\w\_\-\s]*/", "", $title);
+				$posts[$id] = $title;
 			}
 			$statement->close();
 
