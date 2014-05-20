@@ -461,6 +461,7 @@
 				$id = $row["id"];
 				$title = strtolower($title);
 				$title = preg_replace("/[^\w\_\-\s]*/", "", $title);
+				$title = str_replace("-", "", $title);
 				$posts[$id] = $title;
 			}
 			$statement->close();
