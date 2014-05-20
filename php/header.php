@@ -42,12 +42,12 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class=""><a href="index.html">Home</a></li>
-                <li><a href="our_team.html">Our Team</a></li>
-                <li><a href="the_program.html">The Program</a></li>
-                <li><a href="faq.html">FAQs</a></li>
+                <li class=""><a href="index.php">Home</a></li>
+                <li><a href="our_team.php">Our Team</a></li>
+                <li><a href="the_program.php">The Program</a></li>
+                <li><a href="faq.php">FAQs</a></li>
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <li class="active"><a href="/apply">Apply</a></li>
               </ul>
             </div>

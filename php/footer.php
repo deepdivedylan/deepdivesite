@@ -12,9 +12,9 @@
         <p>
           &copy; 2013-2014 Deep Dive Coders LLC All Rights Reserved &middot;
           <a href="#">Carrers</a> &middot;
-          <a href="employers.html">Employers</a>  &middot;
-          <a href="our_network.html">Our Network</a>  &middot;
-          <a href="contact.html">Stay Informed</a>
+          <a href="employers.php">Employers</a>  &middot;
+          <a href="our_network.php">Our Network</a>  &middot;
+          <a href="contact.php">Stay Informed</a>
         </p>
       </footer>
 
