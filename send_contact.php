@@ -1,3 +1,58 @@
+<?php
+    //validate email
+    function spamcheck($field)
+    {
+        //santize email
+        $field = filter_var($field, FILTER_SANITIZE_EMAIL);
+        //validate email
+        if ($field = filter_var($field, FILTER_VALIDATE_EMAIL))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    //check against the spamcheck function
+    $mailcheck = spamcheck($_POST["email"]);
+    if($mailcheck == FALSE)
+    {
+        throw(new Exception("Invalid Email, please try again"));
+    }
+    $email = $_POST["email"];
+    
+    //sanitize the name field
+    $nameRegexp = "/^[a-zA-Z\s\'\-]+$/";
+    $name = $_POST["name"];
+    if(preg_match($nameRegexp, $name) === 0)
+    {
+        throw(new Exception("Please use only letters, spaces, hyphens and apostrophes in the name field"));
+    }
+    
+    //sanitize the phone field
+    $phoneRegexp = "/^[\dextEXT\(\)\.\-\+\s]+$/";
+    $phone = $_POST["phone"];
+    if(preg_match($phoneRegexp, $phone) === 0)
+    {
+        throw(new Exception("Please use only digits, spaces, dashes, periods, parentheses, and extensions in the phone field"));
+    }
+    
+    // Message
+    $message = "$name has put their contact information in the website. Contact them at $email or $phone.";
+    
+    // From 
+    $header ="from: $name <$mail_from>";
+    
+    // Send it to John
+    $to ='josh@joshuatomasgarcia.com';
+    $send_contact = mail($to,"Contact Form",$message,$header);
+    
+    // Check, if message sent to your email 
+    // display message "We've recived your information"
+    if($send_contact)
+    {
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -75,26 +130,7 @@
       </div>
     </div>
     <section class="container" style="margin-top: 100px">
-      <form name="contact" method="post" action="send_contact_home.php">
-        <table width="400" border="0" align="center" cellpadding="3" cellspacing="5">
-          <tr>
-            <td>Name:</td>
-            <td><input name="name" type="text" id="name" size="50"></td>
-          </tr>
-          <tr>
-            <td>Email:</td>
-            <td><input name="email" type="text" id="email" size="50"></td>
-          </tr>  
-          <tr>
-            <td>Phone:</td>
-            <td><input name="phone" type="text" id="phone" size="50"></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input class="btn btn-default" type="submit" name="submit" value="Stay Informed"></td>
-          </tr>
-        </table>
-      </form>
-    <p class="pull-right"><a href="#">Back to top</a></p>
+        <?php echo "<h4 style='text-align: center'>We've recived your contact information</h4>";?>
     </section>
     <hr>
       <!-- FOOTER -->
@@ -127,3 +163,9 @@
     <script src="js/docs.min.js"></script>
   </body>
 </html>
+<?php
+    }
+    else {
+    echo "ERROR";
+    }
+?>
