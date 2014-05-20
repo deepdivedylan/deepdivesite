@@ -5,6 +5,7 @@ require_once("post.php");
 function titleToUrl($title)
 {
     $url = strtolower($title);
+    $url = preg_replace("/[^\w_-]*/", "", $title);
     $url = str_replace("-", "--", $url);
     $url = str_replace(" ", "-", $url);
     return($url);
@@ -23,8 +24,11 @@ if(isset($_GET["title"]))
     try
     {
         $title  = urlToTitle($_GET["title"]);
+        $title = preg_replace("/[^\w_-]*/", "", $title);
         $mysqli = Pointer::getMysqli();
-        $post   = Post::getPostByTitle($mysqli, $title);
+        $posts   = Post::getAllTitles($mysqli);
+        $id = array_search($title, $posts);
+        $post = Post::getPostById($mysqli, $id);
         echo $post;
     }
     catch(Exception $exception)

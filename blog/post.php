@@ -424,5 +424,52 @@
 
 			return($posts);
 		}
+		
+		public static function getAllTitles(&$mysqli,$id)
+		{
+			if(is_object($mysqli) === false || get_class($mysqli) !== "mysqli")
+			{
+				throw (new Exception ("not a mysqli object"));
+			}
+
+			$query = "SELECT id, title, FROM posts";
+
+			$statement = $mysqli->prepare($query);
+			if ($statement === false)
+			{
+				throw(new Exception("Statement did not Prepare"));
+			}
+
+			$bindTest = $statement->bind_param("i",$id);
+
+			if($bindTest === false)
+			{
+				throw (new Exception("Statement did not Bind"));
+			}
+
+			try
+			{
+				$statement->execute();
+			}
+			catch(mysqli_sql_exception $exception)
+			{
+				// ignore the "No index used..." exception since it's just a minor warning
+				if(strpos($exception->getMessage(), "No index used in query/prepared statement") === false)
+				{
+					throw(new Exception("Statement did not Execute", 0, $exception));
+				}
+			}
+
+			$result = $statement->get_result();
+			$posts = array();
+			while($row    = $result->fetch_assoc())
+			{
+				$title = preg_replace("/[^\w_-]*/", "", $row["title"]);
+				$posts[$row["id"]] = $title;
+			}
+			$statement->close();
+
+			return($posts);
+		}
 	}
 ?>
