@@ -11,7 +11,5 @@
     else
     {
         echo "Blog post not found.";
-    }
-    
-    
+    }  
 ?>

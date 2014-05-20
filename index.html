@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Deep Dive Coders</title>
     
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -93,7 +93,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Welcome to Deep Dive Coders!</h1>
-              <p>We're a web development and programming bootcamp located right on Historic Route 66 in Albuquerque.</p>
+              <p>Deep Dive Coders is the best value web development and programming bootcamp in the country. </p>
+              <p><a class="btn btn-default" href="the_program.html" role="button">Learn More &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -101,8 +102,9 @@
           
           <div class="container">
             <div class="carousel-caption">
-              <h1>Apply Now</h1>
-              <p>Apply now to join our June 2, 2014 Summer Web Development & PHP programming Bootcamp! Seats are filling up now for this popular schedule. $500 Scholarships available! Call or email for details.</p>
+              <h1>Apply Now!</h1>
+              <p>Do you want to gain skills where the talent currently enjoys about a 2% unemployment rate, and average salaries of $85K? Do you want to have the technical skills to build websites, software and apps? Apply now to join our June 2, 2014 Summer Bootcamp! Seats are filling up fast!</p>
+              <p><a class="btn btn-default" href="/apply" role="button">Apply &raquo;</a></p>
               
             </div>
           </div>
@@ -111,11 +113,27 @@
         
           <div class="container">
             <div class="carousel-caption">
-              <h1>Contact Us</h1>
-              <p>Do you want to gain skills where the talent currently enjoys about a 2% unemployment rate, and average salaries of $85K? Do you want to have the technical skills to build websites, software and apps?
-              <br/>
-              Call us at (505) 720-1380 to get started now!</p>
-              
+              <h1>Stay Informed</h1>
+              <p>Want to learn more?</p>
+              <form name="contact" method="post" action="send_contact.php">
+                <table width="400" border="0" align="center" cellpadding="3" cellspacing="5">
+                  <tr>
+                    <td>Name:</td>
+                    <td><input name="name" type="text" id="name" size="50"></td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td><input name="subject" type="text" id="email" size="50"></td>
+                  </tr>  
+                  <tr>
+                    <td>Phone:</td>
+                    <td><input name="name" type="text" id="phone" size="50"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input class="btn btn-default" type="submit" name="submit" value="Stay Informed"></td>
+                  </tr>
+                </table>
+              </form>
             </div>
           </div>
         </div>
@@ -212,7 +230,7 @@
           <a href="#">Carrers</a> &middot;
           <a href="#">Employers</a>  &middot;
           <a href="#">Our Network</a>  &middot;
-          <a href="#">Stay Informed</a>
+          <a href="contact.html">Stay Informed</a>
         </p>
       </footer>
     </div><!-- /.container -->

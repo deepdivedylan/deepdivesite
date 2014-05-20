@@ -11,7 +11,7 @@
     <title>Deep Dive Coders</title>
     
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -118,7 +118,7 @@
                 echo " <a href='index.php?page=$lastPage'>Newer Posts</a>";
             }
             ?>
-<p class="pull-right"><a href="#">Back to top</a></p>
+	<p class="pull-right"><a href="#">Back to top</a></p>
     </section>
     <hr>
       <!-- FOOTER -->
@@ -136,7 +136,7 @@
           <a href="#">Carrers</a> &middot;
           <a href="#">Employers</a>  &middot;
           <a href="#">Our Network</a>  &middot;
-          <a href="#">Stay Informed</a>
+          <a href="../contact.html">Stay Informed</a>
         </p>
       </footer>
 
