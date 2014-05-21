@@ -7,7 +7,7 @@
 	Take advantage of our resource network that provides consulting and customized solutions to help start or grow your business. Our partners address the specific needs of individual entrepreneurs and corporate businesses alike to assist them on a path to success. Included are many fundamental resources for business planning, marketing, website developers/designers, local tech community leaders, accounting and much more. We hope these trusted friends can help you as much as they help us. Why not give them a try?
       </p>
       <p>
-	For more information and/or to become a partner , please contact us at:<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=hello@deepdivecoders.com">hello@deepdivecoders.com</a>or at (505) 720-1380.
+	For more information and/or to become a partner, please contact us at:<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=hello@deepdivecoders.com">hello@deepdivecoders.com</a>or at (505) 720-1380.
       </p>
       <p>
 	Thanks, we look forward to hearing from you soon!

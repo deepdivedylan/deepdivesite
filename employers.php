@@ -20,38 +20,35 @@
   <p>Thanks, we look forward to hearing from you soon!</p>
 </section> <!-- #main -->
 <section class="container">    
-    <div> <h3>Who Has Hired Us</h3>	</div>
-    
-    <h4>boomtime</h4>
-    
-    <img class="wp-image-487 alignleft" alt="boomtime" src="images/boomtime.png" width="144.5" height="150" style="float: left; margin-right: 10px"/>
-    
-    <p> What We Do: As experts in small business identity marketing we use the same tools and techniques as the big businesses you compete with. We help you level the playing fields and we do it for less money than you could do it yourself. Listing Management - Claiming & Verification - Content Creation - Promotions - Review Generation - Content Management Operations
-    Our Customers :We help small businesses compete with big businesses. We live and work in the same places our customers do. We are committed to making sure their businesses succeed.
-    
-    </p> <br /> <br /><br /> <br />
-    
-    <h4>SportXast</h4>
-    <p>  
-      <img class=" wp-image-894 alignleft" alt="sportxast" src="/images/sportxast.png" width="150" height="150" style="float: left; margin-right: 10px"/>
-      SportXast is a free and exciting new way to catch and watch game highlights using your smartphone. Follow the action, hit the button, see the best plays. A free app that makes it easy for fans, parents and athletes to capture and share highlights. With SportXast, never miss a great play. With an instant replay button, SportXast helps fans catch incredible highlights and takes away the worry of predicting a great play. Existing video apps and devices require fans to start-and-stop or edit every video recording. SportXast lets fans simply follow the action with their smartphone camera and create an instant replay.
-      
-    </p> <br /> <br /> <br />  <br />  
-    
-    <h4>W3PR</h4>
-    
-    <p>  
-      <img class=" wp-image-894 alignleft" alt="w3pr" src="images/w3pr__image.png" width="150" height="150" style="float: left; margin-right: 10px"/>
-      W3PR is a professional Digital Marketing and Advertising Agency, with offices in Los Angeles and Albuquerque, NM. We&#039re online-only, and are expert with every aspect of creating and maintaining an organization&#039s online presence from Consulting through Planning and Implementation. Since 1995 W3PR has created Internet Marketing and Advertising campaigns that yield measurable results for our clients. W3PR distinguishes itself from its competitors in a number of key areas: Strong Research-Based Campaign Analysis
-      Full-Service Campaign Planning and Implementation Web Site Competitive Analysis Campaign Statistical Tracking and Analysis Comprehensive Campaign Reporting.
-      
-    </p> <br /> <br /> <br />  <br />
-    
-    <h4>Bandojo</h4>
-    
-    <p>  
-      <img class=" wp-image-894 alignleft" alt="bandojo" src="image/bandojo.png" width="150" height="150" style="float: left; margin-right: 10px"/>
-      Bandojo content
+    <h3>Who Has Hired Us</h3>
+    <div style="clear:both; padding-top: 15px">
+        <h4>boomtime</h4>
+        <img class="wp-image-487 alignleft" alt="boomtime" src="images/boomtime.png" width="144.5" height="150" style="float: left; margin-right: 10px"/>
+        <p>
+            As experts in small business identity marketing we use the same tools and techniques as the big businesses you compete with. We help you level the playing fields and we do it for less money than you could do it yourself. We help small businesses compete with big businesses. We live and work in the same places our customers do. We are committed to making sure their businesses succeed.
+        </p>
+    </div>
+    <div style="clear:both; padding-top: 15px">
+        <h4>SportXast</h4>  
+        <img class=" wp-image-894 alignleft" alt="sportxast" src="/images/sportxast.png" width="150" height="150" style="float: left; margin-right: 10px"/>
+        <p>
+            SportXast is a free and exciting new way to catch and watch game highlights using your smartphone. Follow the action, hit the button, see the best plays. A free app that makes it easy for fans, parents and athletes to capture and share highlights. With SportXast, never miss a great play. 
+        </p>
+    </div>
+    <div style="clear:both; padding-top: 15px">
+        <h4>W3PR</h4>  
+        <img class=" wp-image-894 alignleft" alt="w3pr" src="images/w3pr__image.png" width="150" height="150" style="float: left; margin-right: 10px"/>
+        <p>
+            W3PR is a professional Digital Marketing and Advertising Agency, with offices in Los Angeles and Albuquerque, NM. We're online-only, and are expert with every aspect of creating and maintaining an organization's online presence from Consulting through Planning and Implementation.
+        </p>
+    </div>
+    <div style="clear:both; padding-top: 15px">
+        <h4>Bandojo</h4>
+        <img class=" wp-image-894 alignleft" alt="bandojo" src="image/bandojo.png" width="150" height="150" style="float: left; margin-right: 10px"/>
+        <p>  
+            Bandojo is a Albuquerque, NM company that allows anyone, anywhere to create amazing music. For educators, musicians, parents, non-musicians, students. Music creation and learning software on iOS, Mac, and PC.
+        </p>
+    </div>
     <p class="pull-right"><a href="#">Back to top</a></p>
 </section>
  
