@@ -17,7 +17,7 @@
       <h3>Who Works With Us</h3>
       <div style="clear:both; padding-top: 15px">
 	<h4>ABQ WebGeeks </h4>
-	<img class="wp-image-487 alignleft" alt="abqwebgeeks" src="images/abqwebgeeks_150.png" width="134.5" height="150" style="float: left; margin-right: 10px"/>
+	<img class="wp-image-487 alignleft" alt="abqwebgeeks" src="images/abqWebGeeks_image.png" width="134.5" height="150" style="float: left; margin-right: 10px"/>
       
 	<p> ABQ Web Geeks was born of a local drink up, standing on the shoulders of previous presentation groups. We are dedicated to supporting the growth of web professionals in the broader Albuquerque area. We strive to promote knowledge across all facets of web creation while embracing the open nature of the medium. We are of the community, by the community, and for the community. Please join us as we grow a better Internet and a better Albuquerque.
 	</p>
@@ -73,14 +73,14 @@
       </div>
       <div style="clear:both; padding-top: 15px">
       <h4>RebelWorkout</h4> 
-        <img class=" wp-image-894 alignleft" alt="RebelWorkout" src="/images/rebelWorkout.jpg" width="150" height="150" style="float: left; margin-right: 10px"/>
+        <img class=" wp-image-894 alignleft" alt="RebelWorkout" src="/images/rebelworkout.png" width="150" height="150" style="float: left; margin-right: 10px"/>
 	<p> 
 	  With a name like Rebel Workout you might think hard, callous, punishing but the reality is CHALLENGING, STIMULATING, EXCITING. We are Rebel Workout because we offer classes that are different and unique. Our classes are something you definitely won't find in your gym. We take pride in creating workouts that are designed to impact you in ways you never thought possible. Our workouts tone, tighten, and sculpt every muscle in your body, challenging you physically. Our workouts move your body in so many ways that it is also a mental workout, literally giving you a total body workout. Try just one class and you will see what you have been missing.
 	</p>
       </div>
       <div style="clear:both; padding-top: 15px">
 	<h4>TedxAbq</h4> 
-	<img class=" wp-image-894 alignleft" alt="Tedxabq" src="images/tedxabq.jpg" width="150" height="150" style="float: left; margin-right: 10px"/>
+	<img class=" wp-image-894 alignleft" alt="Tedxabq" src="images/tedxabq.png" width="150" height="150" style="float: left; margin-right: 10px"/>
 	<p> 
 	  In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local events that bring people together to share a TED-like experience. Our event is called TEDxABQ, where x = independently organized Ted event. At our TEDx ABQ event, TEDTalks video and live speakers will combine to apart deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.  
 	</p>

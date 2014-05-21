@@ -24,7 +24,7 @@
     
     <h4>boomtime</h4>
     
-    <img class="wp-image-487 alignleft" alt="boomtime" src="images/boomtime_150.png" width="144.5" height="150" style="float: left; margin-right: 10px"/>
+    <img class="wp-image-487 alignleft" alt="boomtime" src="images/boomtime.png" width="144.5" height="150" style="float: left; margin-right: 10px"/>
     
     <p> What We Do: As experts in small business identity marketing we use the same tools and techniques as the big businesses you compete with. We help you level the playing fields and we do it for less money than you could do it yourself. Listing Management - Claiming & Verification - Content Creation - Promotions - Review Generation - Content Management Operations
     Our Customers :We help small businesses compete with big businesses. We live and work in the same places our customers do. We are committed to making sure their businesses succeed.
@@ -33,7 +33,7 @@
     
     <h4>SportXast</h4>
     <p>  
-      <img class=" wp-image-894 alignleft" alt="sportxast" src="/images/sportxast_150.png" width="150" height="150" style="float: left; margin-right: 10px"/>
+      <img class=" wp-image-894 alignleft" alt="sportxast" src="/images/sportxast.png" width="150" height="150" style="float: left; margin-right: 10px"/>
       SportXast is a free and exciting new way to catch and watch game highlights using your smartphone. Follow the action, hit the button, see the best plays. A free app that makes it easy for fans, parents and athletes to capture and share highlights. With SportXast, never miss a great play. With an instant replay button, SportXast helps fans catch incredible highlights and takes away the worry of predicting a great play. Existing video apps and devices require fans to start-and-stop or edit every video recording. SportXast lets fans simply follow the action with their smartphone camera and create an instant replay.
       
     </p> <br /> <br /> <br />  <br />  
@@ -50,7 +50,7 @@
     <h4>Bandojo</h4>
     
     <p>  
-      <img class=" wp-image-894 alignleft" alt="bandojo" src="image/bandojo.jpg" width="150" height="150" style="float: left; margin-right: 10px"/>
+      <img class=" wp-image-894 alignleft" alt="bandojo" src="image/bandojo.png" width="150" height="150" style="float: left; margin-right: 10px"/>
       Bandojo content
     <p class="pull-right"><a href="#">Back to top</a></p>
 </section>

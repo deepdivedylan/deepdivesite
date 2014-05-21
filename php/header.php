@@ -20,7 +20,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
   </head>
 
 <!-- NAVBAR
@@ -28,7 +28,7 @@
   <body>
     </div><div class="navbar-wrapper">
       <div class="container"> 
-        <a href=""><img src="images/logo.png" class="logo"></a>
+        <a href=""><img src="/images/logo.png" class="logo"></a>
           <div class="navbar navbar-inverse navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -42,12 +42,12 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class=""><a href="index.php">Home</a></li>
-                <li><a href="our_team.php">Our Team</a></li>
-                <li><a href="the_program.php">The Program</a></li>
-                <li><a href="faq.php">FAQs</a></li>
+                <li class=""><a href="/index.php">Home</a></li>
+                <li><a href="/our_team.php">Our Team</a></li>
+                <li><a href="/the_program.php">The Program</a></li>
+                <li><a href="/faq.php">FAQs</a></li>
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="/contact.php">Contact</a></li>
                 <li class="active"><a href="/apply">Apply</a></li>
               </ul>
             </div>
