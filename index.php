@@ -22,7 +22,7 @@
             <div class="carousel-caption">
               <h1>Welcome to Deep Dive Coders!</h1>
               <p>Deep Dive Coders is the best value web development and programming bootcamp in the country. </p>
-              <p><a class="btn btn-default btn-carousel" href="the_program.html" role="button">Learn More &raquo;</a></p>
+              <p><a class="btn btn-default btn-carousel" href="the_program.php" role="button">Learn More &raquo;</a></p>
             </div>
           </div>
         </div>
