@@ -26,9 +26,9 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    </div><div class="navbar-wrapper">
+    <div class="navbar-wrapper">
       <div class="container"> 
-        <a href=""><img src="/images/logo.png" class="logo"></a>
+        <a href="/index.php"><img src="/images/logo.png" class="logo"></a>
           <div class="navbar navbar-inverse navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
