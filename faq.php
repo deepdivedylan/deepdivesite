@@ -1,5 +1,5 @@
 <?php include("php/header.php"); ?>
-    <section class="container" style="margin-top: 100px">
+    <section class="container">
       <h2>Frequently Asked Questions</h2>
       <a href="#whatisdeepdivecoders">What is Deep Dive Coders?</a>
       <br />

@@ -1,7 +1,7 @@
 <?php
     include("php/header.php");
 ?>
-    <section class="container" style="margin-top: 150px">
+    <section class="container">
       <h3>The DDC Network</h3>
       <p>
 	Take advantage of our resource network that provides consulting and customized solutions to help start or grow your business. Our partners address the specific needs of individual entrepreneurs and corporate businesses alike to assist them on a path to success. Included are many fundamental resources for business planning, marketing, website developers/designers, local tech community leaders, accounting and much more. We hope these trusted friends can help you as much as they help us. Why not give them a try?

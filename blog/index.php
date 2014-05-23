@@ -1,7 +1,7 @@
 <?php
     include("../php/header.php");
 ?>
-    <section class="container" style="margin-top: 100px">
+    <section class="container">
 	<?php
             require_once("post.php");
             require_once("../../config.php");

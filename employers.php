@@ -1,7 +1,7 @@
 <?php
     include("php/header.php");
 ?>
-<section class="container" style="margin-top: 150px">
+<section class="container">
   <h3>Employers</h3>
   <p>Welcome Employers!</p>
   <p>Thanks to our employer and recruiter partners who joined us for an informal Meet &amp; Greet with our graduating students at Deep Dive Coders on 12/12/13. They were able to get to know our aspiring web developers / programmers, enjoy some refreshments, and have casual conversations with others from the Abq tech community.</p>

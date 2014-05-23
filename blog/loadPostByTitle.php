@@ -27,7 +27,7 @@ if(isset($_GET["title"]))
         $id = array_search($title, $posts);
         $post = Post::getPostById($mysqli, $id);
         include("../php/header.php");?>
-            <section class="container" style="margin-top: 100px">
+            <section class="container">
                 <?php echo $post;?>
                 <p class="pull-right"><a href="#">Back to top</a></p>
             </section>

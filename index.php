@@ -1,5 +1,9 @@
 <?php
     include("php/header.php");
+    if(isset($_GET["email"]) && $_GET["email"] === "received")
+    {
+	echo"<script>alert('Thanks for subscribing!')</script>";
+    }
 ?>
     <!-- Carousel
     ================================================== -->

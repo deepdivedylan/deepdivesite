@@ -1,5 +1,5 @@
 <?php include("php/header.php"); ?>
-    <section style="margin-top: 100px" class="container">
+    <section class="container">
       <h3>Our Founder</h3>
       <img class="wp-image-487 alignleft" alt="John-Mierzwa-headshot-3-6-13png-Copy" src="http://www.deepdivecoders.com/wp-content/uploads/2013/06/John-Mierzwa-headshot-3-6-13png-Copy-269x300.png" width="134.5" height="150" style="float: left; margin-right: 10px"/>
       <p>

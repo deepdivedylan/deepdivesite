@@ -1,5 +1,5 @@
 <?php include("php/header.php"); ?>
-    <section class="container" style="margin-top: 100px">
+    <section class="container">
       <h2>Program Overview</h2>
       <p>
         Deep Dive Coders is a web development and programming bootcamp located in the historic, convenient and trendy EDo or East Downtown neighborhood in Albuquerque, NM. At Deep Dive Coders you'll become a web developer in just 2-1/2 months so you can get a great job as a programmer.

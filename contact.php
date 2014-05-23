@@ -1,4 +1,10 @@
-<?php include("php/header.php"); ?>
+<?php
+    include("php/header.php");
+    if(isset($_GET["email"]) && $_GET["email"] === "received")
+    {
+	echo"<script>alert('Thanks for subscribing!')</script>";
+    }
+?>
     <section class="container">
     <h3>Contact Us</h3>
     <p>
@@ -19,7 +25,7 @@
             <td><input name="phone" type="text" id="phone" size="50"></td>
           </tr>
           <tr>
-            <td colspan="2"><input class="btn btn-default" type="submit" name="submit" value="Stay Informed"></td>
+            <td colspan="2" align="center"><input class="btn btn-default" type="submit" name="submit" value="Stay Informed"></td>
           </tr>
         </table>
       </form>

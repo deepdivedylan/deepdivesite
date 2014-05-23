@@ -17,7 +17,7 @@ catch(Exception $e)
     include("../php/header.php");
 ?>
     <link href="apply.css" rel="stylesheet">
-    <section class="container" style="margin-top: 100px">
+    <section class="container">
 	<h1>Application</h1>
 	<p>You're a great fit for Deep Dive Coders because you're:</p>
 	<table class="passionTable">
