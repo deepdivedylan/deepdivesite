@@ -85,7 +85,7 @@
         <div class="col-lg-4">
           <img class="img-circle" src="images/kirsten.jpg" alt="Photo of Kirsten" height="200px" width="200px">
           <h2>Kirsten</h2>
-          <p>"Deep Dive Coders is challenging yet rewarding, overwhelming yet exciting. You'll learn more than just how to be a programmer, you'll learn how to succeed in the tech industry" -Jason, Fall 2013</p>
+          <p>"Deep Dive Coders challenged me way beyond my level of comfort and tested my determination. With no prior technical skills, I am now looking forward to a career in web development. - Kirsten, Spring 2014</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="images/matt.png" alt="Photo of Matt" height="200px" width="200px">
