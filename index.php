@@ -57,7 +57,7 @@
                     <td colspan="2"><input class="btn btn-default" type="submit" name="submit" value="Stay Informed"></td>
                   </tr>
                 </table>-->
-		<form name="contact" method="post" action="send_email.php">
+		<form name="contact" method="post" action="php/send_contact_home.php">
 		<input name="phone" type="text" id="phone" size="30" placeholder="remember to change your php script">
 		<br/>
 		<input style="margin-top: 10px" class="btn btn-default btn-carousel" type="submit" name="submit" value="Stay Informed &raquo;">
@@ -105,7 +105,7 @@
           <p class="lead">We're the best value web bootcamp in the country, but this may not last forever. Apply now to take advantage of our current rates.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="images/team_2.jpg" alt="Photo of some of our students collaborating" height="500px" width="500px">
         </div>
       </div>
 
@@ -113,7 +113,7 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <a href="http://techcrunch.com/2012/09/30/an-analysis-of-market-demand-for-web-programming-languages/"><img class="featurette-image img-responsive" src="images/language_demand.png" alt="Graph of in-demand languages"height="500px" width="500px"></a>
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">High Demand. <span class="text-muted">We teach PHP for a reason.</span></h2>
@@ -129,7 +129,7 @@
           <p class="lead">We work in small teams, collaborate on projects and everyone gets the individual attention they need.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="images/2014_01_06_camp.jpg" alt="Photo of our Winter 2014 bootcamp graduates" height="500px" width="500px">
         </div>
       </div>
       <br/>
