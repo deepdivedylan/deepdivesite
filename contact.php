@@ -1,10 +1,10 @@
 <?php include("php/header.php"); ?>
-    <section class="container" style="margin-top: 100px">
+    <section class="container">
     <h3>Contact Us</h3>
     <p>
       Please feel free to call (505) 720-1380 or email <a href="mailto:hello@deepdivecoders.com">hello@deepdivecoders.com</a>. Additionally, if you would like to stay informed, please enter your information in the contact form below.
     </p>
-      <form name="contact" method="post" action="send_contact_home.php">
+      <form name="contact" method="post" action="contact/send_contact.php">
         <table width="400" border="0" align="center" cellpadding="3" cellspacing="5">
           <tr>
             <td>Name:</td>

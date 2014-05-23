@@ -58,7 +58,7 @@
                   </tr>
                 </table>-->
 		<form name="contact" method="post" action="php/send_contact_home.php">
-		<input name="phone" type="text" id="phone" size="30" placeholder="remember to change your php script">
+		<input name="email" type="text" style="color: black" id="email" size="30" placeholder="email@example.com">
 		<br/>
 		<input style="margin-top: 10px" class="btn btn-default btn-carousel" type="submit" name="submit" value="Stay Informed &raquo;">
               </form>
