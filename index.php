@@ -18,7 +18,7 @@
             <div class="carousel-caption">
               <h1>Welcome to Deep Dive Coders!</h1>
               <p>Deep Dive Coders is the best value web development and programming bootcamp in the country. </p>
-              <p><a class="btn btn-default" href="the_program.html" role="button">Learn More &raquo;</a></p>
+              <p><a class="btn btn-default btn-carousel" href="the_program.html" role="button">Learn More &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@
             <div class="carousel-caption">
               <h1>Apply Now!</h1>
               <p>Do you want to gain skills where the talent currently enjoys about a 2% unemployment rate, and average salaries of $85K? Do you want to have the technical skills to build websites, software and apps? Apply now to join our June 2, 2014 Summer Bootcamp! Seats are filling up fast!</p>
-              <p><a class="btn btn-default" href="/apply" role="button">Apply &raquo;</a></p>
+              <p><a class="btn btn-default btn-carousel" href="/apply" role="button">Apply &raquo;</a></p>
               
             </div>
           </div>
@@ -38,8 +38,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Stay Informed</h1>
-              <p>Want to learn more?</p>
-              <form name="contact" method="post" action="send_email.php">
+              <p>Want to learn more? Feel free to call us at (505) 720-1380, email us at <a style="color:white; text-decoration:none" href="mailto:hello@deepdivecoders.com">hello@deepdivecoders.com</a> or join our mailing list below!</p>
+              <!--<form name="contact" method="post" action="send_email.php">
                 <table width="400" border="0" align="center" cellpadding="3" cellspacing="5">
                   <tr>
                     <td>Name:</td>
@@ -51,12 +51,16 @@
                   </tr>  
                   <tr>
                     <td>Phone:</td>
-                    <td><input name="phone" type="text" id="phone" size="50"></td>
+                    <td><input name="phone" type="text" id="phone" size="50" value="email"></td>
                   </tr>
                   <tr>
                     <td colspan="2"><input class="btn btn-default" type="submit" name="submit" value="Stay Informed"></td>
                   </tr>
-                </table>
+                </table>-->
+		<form name="contact" method="post" action="send_email.php">
+		<input name="phone" type="text" id="phone" size="30" placeholder="remember to change your php script">
+		<br/>
+		<input style="margin-top: 10px" class="btn btn-default btn-carousel" type="submit" name="submit" value="Stay Informed &raquo;">
               </form>
             </div>
           </div>
@@ -75,22 +79,19 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/jason.png" alt="Generic placeholder image">
+          <img class="img-circle" src="images/jason.png" alt="Generic placeholder image" height="200px" width="200px">
           <h2>Jason</h2>
           <p>"Deep Dive Coders is challenging yet rewarding, overwhelming yet exciting. You'll learn more than just how to be a programmer, you'll learn how to succeed in the tech industry" -Jason, Fall 2013</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/matt.png" alt="Generic placeholder image">
+          <img class="img-circle" src="images/matt.png" alt="Generic placeholder image" height="200px" width="200px">
           <h2>Matt</h2>
           <p>"Deep Dive Coders was an intense, comprehensive learning experience. It isn't easy but it's worth it. I can now confidently analyze, interpret, and write computer code and it was amazing how much we were able to learn and retain by working through the various projects" -Matt, Fall 2013</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/josh.jpg" alt="Generic placeholder image">
+          <img class="img-circle" src="images/josh.jpg" alt="Generic placeholder image" height="200px" width="200px">
           <h2>Josh</h2>
-          <p>"I would reccomend Deep Dive Coders to anyone that has the will and determination to be a programmer but just lacks the guided instruction. Everything was amazing, the course, the instructor, my classmates and the networking all are designed to help the students succeed."</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>"I would reccomend Deep Dive Coders to anyone that has the will and determination to be a programmer but just lacks the guided instruction. Everything was amazing, the course, the instructor, my classmates and the networking all are there to help you succeed." -Josh, Spring 2014</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 

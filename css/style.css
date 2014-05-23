@@ -60,8 +60,13 @@ color: #428bca;
   padding-left: 15px;
 }
 
-.footer {
-background-color: #cecece; 
+.btn-carousel {
+ background-color: #428bca;
+ color: white;
+}
+.btn-carousel:hover {
+  background-color: #63af44;
+  color: white;
 }
 
 
