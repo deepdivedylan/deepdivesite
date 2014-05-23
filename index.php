@@ -83,17 +83,17 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/jason.png" alt="Generic placeholder image" height="200px" width="200px">
-          <h2>Jason</h2>
+          <img class="img-circle" src="images/kirsten.jpg" alt="Photo of Kirsten" height="200px" width="200px">
+          <h2>Kirsten</h2>
           <p>"Deep Dive Coders is challenging yet rewarding, overwhelming yet exciting. You'll learn more than just how to be a programmer, you'll learn how to succeed in the tech industry" -Jason, Fall 2013</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/matt.png" alt="Generic placeholder image" height="200px" width="200px">
+          <img class="img-circle" src="images/matt.png" alt="Photo of Matt" height="200px" width="200px">
           <h2>Matt</h2>
           <p>"Deep Dive Coders was an intense, comprehensive learning experience. It isn't easy but it's worth it. I can now confidently analyze, interpret, and write computer code and it was amazing how much we were able to learn and retain by working through the various projects" -Matt, Fall 2013</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/josh.jpg" alt="Generic placeholder image" height="200px" width="200px">
+          <img class="img-circle" src="images/josh.jpg" alt="Photo of Josh" height="200px" width="200px">
           <h2>Josh</h2>
           <p>"I would reccomend Deep Dive Coders to anyone that has the will and determination to be a programmer but just lacks the guided instruction. Everything was amazing, the course, the instructor, my classmates and the networking all are there to help you succeed." -Josh, Spring 2014</p>
         </div><!-- /.col-lg-4 -->
