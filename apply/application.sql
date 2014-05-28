@@ -20,7 +20,7 @@ CREATE TABLE application
 	gender CHAR(1) NOT NULL,
 	birthday DATE NOT NULL,
 	browser VARCHAR(192) NOT NULL,
-	ipAddress VARBINARY(64) NOT NULL,
+	ipAddress VARBINARY(16),
 	howHeard VARCHAR(32),
 	skype VARCHAR(32),
 	google VARCHAR(32),
