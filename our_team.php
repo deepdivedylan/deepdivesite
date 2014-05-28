@@ -1,7 +1,7 @@
 <?php include("php/header.php"); ?>
     <section class="container">
       <h3>Our Founder</h3>
-      <img class="wp-image-487 alignleft" alt="John-Mierzwa-headshot-3-6-13png-Copy" src="http://www.deepdivecoders.com/wp-content/uploads/2013/06/John-Mierzwa-headshot-3-6-13png-Copy-269x300.png" width="134.5" height="150" style="float: left; margin-right: 10px"/>
+      <img alt="John-Mierzwa-headshot-3-6-13png-Copy" src="/images/John-Mierzwa-headshot-3-6-13png-Copy-150x150.png" width="150" height="150" style="float: left; margin-right: 10px"/>
       <p>
         Deep Dive Coders was founded by John Mierzwa. John was Vice President of Sales and Operations for a $218M company in Las Vegas, NV and he understands that employers are looking to hire software developers who already have experience working on actual business problems. That&#8217;s why Deep Dive Coders is a project-based program, with our students working on apps to solve real-world challenges in pairs and teams.
       </p>
@@ -13,8 +13,8 @@
       </p>
       <br />
       <h3>Our Instructor</h3>
-      <p>  
-        <img class=" wp-image-894 alignleft" alt="Dylan McDonald profile pic for site" src="http://www.deepdivecoders.com/wp-content/uploads/2013/05/Dylan-McDonald-profile-pic-for-site-150x150.jpg" width="150" height="150" style="float: left; margin-right: 10px"/>
+      <p>
+        <img alt="Dylan McDonald profile pic for site" src="/images/Dylan-McDonald-profile-pic-for-site-150x150.jpg" width="150" height="150" style="float: left; margin-right: 10px"/>
         Dylan McDonald is a computer scientist by education, a programmer by trade, a teacher by passion, and he's ecstatic to be able to combine and share his interests and experience with students at Deep Dive Coders.
       </p>
       <p>
@@ -31,5 +31,5 @@
       </p>
       <p class="pull-right"><a href="#">Back to top</a></p>
     </section>
-    
+
 <?php include("php/footer.php"); ?>
