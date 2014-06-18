@@ -19,7 +19,6 @@
         <div class="item active">
           
           <div class="container">
-	    <img src="images/abq.png">
             <div class="carousel-caption">
               <h1>Welcome to Deep Dive Coders!</h1>
               <p>Deep Dive Coders is the best value web development and programming bootcamp in the country. </p>
@@ -30,7 +29,6 @@
         <div class="item">
           
           <div class="container">
-	    <img src="images/abq.png">
             <div class="carousel-caption">
               <h1>Apply Now!</h1>
               <p>Do you want to gain skills where the talent currently enjoys about a 2% unemployment rate, and average salaries of $85K? Do you want to have the technical skills to build websites, software and apps? Apply now to join our June 2, 2014 Summer Bootcamp! Seats are filling up fast!</p>
@@ -42,7 +40,6 @@
         <div class="item">
         
           <div class="container">
-	    <img src="images/abq.png">
             <div class="carousel-caption">
               <h1>Stay Informed</h1>
               <p>Want to learn more? Feel free to call us at (505) 720-1380, email us at <a style="color:white; text-decoration:none" href="mailto:hello@deepdivecoders.com">hello@deepdivecoders.com</a> or join our mailing list below!</p>

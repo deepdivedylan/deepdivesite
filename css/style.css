@@ -78,6 +78,12 @@ color: #428bca;
 -------------------------------------------------- */
 
 /* Carousel base class */
+
+#myCarousel {
+  background-image: url(/images/abq.png);
+  background-size: cover;
+}
+
 .carousel {
   height: 500px;
   margin-bottom: 60px;
