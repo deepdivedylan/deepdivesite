@@ -100,7 +100,7 @@
         <div class="col-lg-4">
           <img class="img-circle" src="images/jordan.jpg" alt="Jordan" height="200px" width="200px">
           <h2>Jordan</h2>
-          <p>"Before I attended Deep Dive Coders I had no programming experience, but the bootcamp gave me skills to begin my programming career in Albuquerque far sooner than I thought would be possible – matter of fact, I got a great programming job just a few days after graduating." -Jordan, Winter 2013</p>
+          <p>"Before I attended Deep Dive Coders I had no programming experience, but the bootcamp gave me skills to begin my programming career in Albuquerque far sooner than I thought would be possible - matter of fact, I got a great programming job just a few days after graduating." -Jordan, Winter 2013</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="images/calvin.jpg" alt="Calvin" height="200px" width="200px">
@@ -136,7 +136,7 @@
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">High Demand. <span class="text-muted">We teach PHP for a reason.</span></h2>
-          <p class="lead">PHP is the most common web development language and always in highest demand. You’ll also learn to code using HTML5/CSS3, JavaScript, jQuery and MySQL to give you a foundation to go to work and build software and websites.</p>
+          <p class="lead">PHP is the most common web development language and always in highest demand. You'll also learn to code using HTML5/CSS3, JavaScript, jQuery and MySQL to give you a foundation to go to work and build software and websites.</p>
         </div>
       </div>
 
