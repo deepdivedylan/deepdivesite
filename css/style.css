@@ -95,7 +95,7 @@ color: #428bca;
 .carousel-caption {
   z-index: 10;
   color: #3a3a3a;
-  box-shadow: 0 0 0;
+  text-shadow: 0 0 0;
 }
 
 .carousel-caption a {
