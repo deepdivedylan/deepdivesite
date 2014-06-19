@@ -131,7 +131,7 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <a href="http://techcrunch.com/2012/09/30/an-analysis-of-market-demand-for-web-programming-languages/"><img class="featurette-image img-responsive" src="images/language_demand.png" alt="Graph of in-demand languages"height="500px" width="500px"></a>
+          <a href="http://techcrunch.com/2012/09/30/an-analysis-of-market-demand-for-web-programming-languages/"><img class="featurette-image img-responsive" src="images/jobs_per_language.png" alt="Graph of in-demand languages"height="500px" width="500px"></a>
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">High Demand. <span class="text-muted">We teach PHP for a reason.</span></h2>
