@@ -27,7 +27,7 @@
 ================================================== -->
   <body>
     <div class="navbar-wrapper">
-      <div class="container"> 
+      <div> 
         <a href="/index.php"><img src="/images/logo.png" class="logo"></a>
           <div class="navbar navbar-inverse navbar-static-top" role="navigation">
           <div class="container">
