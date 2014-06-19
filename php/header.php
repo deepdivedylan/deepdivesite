@@ -27,10 +27,10 @@
 ================================================== -->
   <body>
     <div class="navbar-wrapper">
-      <div> 
+      <div class="container"> 
         <a href="/index.php"><img src="/images/logo.png" class="logo"></a>
           <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
+          <div>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
