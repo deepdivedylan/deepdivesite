@@ -54,7 +54,20 @@
       </div>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+    </div>
+    <script type="text/javascript">
+
+	var $ = jQuery.noConflict();
+	
+	$(document).ready(function() {
+	 $('#myCarousel').carousel({
+	       interval: 6000,
+		  cycle: true
+	 });
+	});
+
+</script>
+    <!-- /.carousel -->
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
