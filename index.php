@@ -89,7 +89,7 @@
           <p>"Blah blah blah boomtime" -Jordan, Winter 2013</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/calvin.png" alt="Photo of Calvin" height="200px" width="200px">
+          <img class="img-circle" src="images/calvin.jpg" alt="Photo of Calvin" height="200px" width="200px">
           <h2>Calvin</h2>
           <p>"Deep Dive Coders blah blah blah blah blah." -Calvin, Winter 2013</p>
         </div><!-- /.col-lg-4 -->
