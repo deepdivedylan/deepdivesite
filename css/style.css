@@ -67,10 +67,12 @@ color: #428bca;
 .btn-carousel {
  background-color: #428bca;
  color: white;
+ border-color: rgba(0, 0, 0, 0);
 }
 .btn-carousel:hover {
   background-color: #63af44;
   color: white;
+  border-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -93,6 +95,11 @@ color: #428bca;
 .carousel-caption {
   z-index: 10;
   color: #3a3a3a;
+  box-shadow: 0 0 0;
+}
+
+.carousel-caption a {
+  color: #eaeaea;
 }
 
 /* Declare heights because of positioning of img element */
