@@ -194,10 +194,14 @@ padding-bottom: 100px;
   }
   .navbar.navbar-inverse.navbar-static-top {
   background-color: #428bca;
-  width: 580px;
+  width: 780px;
   float: right;
   clear: both;
   margin-top: 18px;
+  }
+  
+  .nav {
+    padding-left: 10px;
   }
   
   body
