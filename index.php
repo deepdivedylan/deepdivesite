@@ -62,7 +62,7 @@
 	
 	$(document).ready(function() {
 	 $('#myCarousel').carousel({
-	       interval: 6000,
+	       interval: 10000,
 		  cycle: true
 	 });
 	});
@@ -79,17 +79,17 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/kirsten.jpg" alt="Photo of Kirsten" height="200px" width="200px">
+          <img class="img-circle" src="images/kirsten.jpg" alt="Kirsten" height="200px" width="200px">
           <h2>Kirsten</h2>
           <p>"Deep Dive Coders challenged me way beyond my level of comfort and tested my determination. With no prior technical skills, I am now looking forward to a career in web development." - Kirsten, Spring 2014</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/matt.png" alt="Photo of Matt" height="200px" width="200px">
+          <img class="img-circle" src="images/matt.png" alt="Matt" height="200px" width="200px">
           <h2>Matt</h2>
           <p>"Deep Dive Coders was an intense, comprehensive learning experience. It isn't easy but it's worth it. I can now confidently analyze, interpret, and write computer code and it was amazing how much we were able to learn and retain by working through the various projects" -Matt, Fall 2013</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/josh.jpg" alt="Photo of Josh" height="200px" width="200px">
+          <img class="img-circle" src="images/josh.jpg" alt="Josh" height="200px" width="200px">
           <h2>Josh</h2>
           <p>"I would reccomend Deep Dive Coders to anyone that has the will and determination to be a programmer but just lacks the guided instruction. Everything was amazing, the course, the instructor, my classmates and the networking all are there to help you succeed." -Josh, Spring 2014</p>
         </div><!-- /.col-lg-4 -->
@@ -98,19 +98,19 @@
      <!-- adding another row of testimonials-->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/jordan.jpg" alt="Photo of Jordan" height="200px" width="200px">
+          <img class="img-circle" src="images/jordan.jpg" alt="Jordan" height="200px" width="200px">
           <h2>Jordan</h2>
-          <p>"Back in my day, we didn't have no jQuery!" -Jordan, Winter 2013</p>
+          <p>"Before I attended Deep Dive Coders I had no programming experience, but the bootcamp gave me skills to begin my programming career in Albuquerque far sooner than I thought would be possible – matter of fact, I got a great programming job just a few days after graduating." -Jordan, Winter 2013</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/calvin.jpg" alt="Photo of Calvin" height="200px" width="200px">
+          <img class="img-circle" src="images/calvin.jpg" alt="Calvin" height="200px" width="200px">
           <h2>Calvin</h2>
           <p>"Deep Dive Coders blah blah blah blah blah." -Calvin, Winter 2013</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/josh.jpg" alt="Photo of Josh" height="200px" width="200px">
-          <h2>Josh</h2>
-          <p>"I would reccomend Deep Dive Coders to anyone that has the will and determination to be a programmer but just lacks the guided instruction. Everything was amazing, the course, the instructor, my classmates and the networking all are there to help you succeed." -Josh, Spring 2014</p>
+          <img class="img-circle" src="images/meta.jpg" alt="Meta" height="200px" width="200px">
+          <h2>Meta</h2>
+          <p>"Change me!!" -Meta, Spring 2014</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -120,7 +120,7 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Best Value in the Country. <span class="text-muted">We dare you to find a better deal.</span></h2>
+          <h2 class="featurette-heading">Amazing outcomes. Best Value in the Country. <span class="text-muted">We dare you to find a better deal.</span></h2>
           <p class="lead">We're the best value web bootcamp in the country, but this may not last forever. Apply now to take advantage of our current rates.</p>
         </div>
         <div class="col-md-5">
@@ -136,7 +136,7 @@
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">High Demand. <span class="text-muted">We teach PHP for a reason.</span></h2>
-          <p class="lead">PHP is the most used programming language and in the highest demand. You learn HTML5/CSS3, JavaScript, jQuery and mySQL as you build practical and theoretical foundation of understanding. But PHP is the focus, because that's where the jobs are.</p>
+          <p class="lead">PHP is the most common web development language and always in highest demand. You’ll also learn to code using HTML5/CSS3, JavaScript, jQuery and MySQL to give you a foundation to go to work and build software and websites.</p>
         </div>
       </div>
 
