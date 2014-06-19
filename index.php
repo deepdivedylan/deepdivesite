@@ -8,7 +8,7 @@
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      
+
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -17,7 +17,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          
+
           <div class="container">
             <div class="carousel-caption">
               <h1>Welcome to Deep Dive Coders!</h1>
@@ -27,18 +27,18 @@
           </div>
         </div>
         <div class="item">
-          
+
           <div class="container">
             <div class="carousel-caption">
               <h1>Apply Now!</h1>
               <p>Do you want to gain skills where the talent currently enjoys about a 2% unemployment rate, and average salaries of $85K? Do you want to have the technical skills to build websites, software and apps? Apply now to join our June 2, 2014 Summer Bootcamp! Seats are filling up fast!</p>
               <p><a class="btn btn-default btn-carousel" href="/apply" role="button">Apply &raquo;</a></p>
-              
+
             </div>
           </div>
         </div>
         <div class="item">
-        
+
           <div class="container">
             <div class="carousel-caption">
               <h1>Stay Informed</h1>
@@ -61,7 +61,7 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-      
+
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
@@ -80,13 +80,13 @@
           <p>"I would reccomend Deep Dive Coders to anyone that has the will and determination to be a programmer but just lacks the guided instruction. Everything was amazing, the course, the instructor, my classmates and the networking all are there to help you succeed." -Josh, Spring 2014</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-      
+
      <!-- adding another row of testimonials-->
       <div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="images/jordan.jpg" alt="Photo of Jordan" height="200px" width="200px">
           <h2>Jordan</h2>
-          <p>"Blah blah blah boomtime" -Jordan, Winter 2013</p>
+          <p>"Back in my day, we didn't have no jQuery!" -Jordan, Winter 2013</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="images/calvin.jpg" alt="Photo of Calvin" height="200px" width="200px">
@@ -141,8 +141,8 @@
       <br/>
       <br/>
       <!--<hr class="featurette-divider">-->
-        
-        
+
+
 
       <!-- /END THE FEATURETTES -->
 <?php
